@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: rgb(36,50,61);
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 440px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+#address {
+  color: white;
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+#submitBtn {
+  background-color: rgb(26,177,136);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  width: 382px;
+  padding: 20px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  cursor: pointer;
+  outline: none;
+}
+
+#submitBtn:hover {
+  background-color: rgb(50, 202, 162);
+}
+
+.input {
+  border: 1px solid white;
+  background-color: rgb(36,50,61);
+  padding: 8px;
+  width: 380px;
+  color: white;
+  outline: none;
+}
+
+#selectedFileInfo {
+  color: white;
+  font-weight: 300;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.fileUpload {
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(67,82,89);
+  text-transform: uppercase;
+  border: none;
+  width: 191px;
+  padding: 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.fileUpload:hover {
+  background-color: rgb(83, 98, 106);
+}
+
+#selectFile {
+  font-weight: 300;
 }
