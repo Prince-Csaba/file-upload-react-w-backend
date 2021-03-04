@@ -24,7 +24,7 @@ function App(){
 			userData[name] = input.value;
 		}
 
-		console.log(userData);
+		//console.log(userData);
 
 		formData.append('userfile', selectedFile);
 		formData.append('userData', JSON.stringify(userData));
@@ -67,18 +67,18 @@ function App(){
 						<p id="emailError"></p>
 					</div>
 				
-				
-				
 						<p id="address">Address:</p>
-						<div className="formRow">
-							<label htmlFor="address"></label>
-							<input type="text" id="city" name="city" className="input" placeholder="City" />
-							<p id="addressError"></p>
-						</div>
-						<div className="formRow">
-							<label htmlFor="address"></label>
-							<input type="text" id="zip" name="zip" className="input" placeholder="ZIP code" />
-							<p id="zipError"></p>
+						<div className="cityWrapper">
+							<div className="formRow">
+								<label htmlFor="address"></label>
+								<input type="text" id="city" name="city" className="input" placeholder="City" />
+								<p id="addressError"></p>
+							</div>
+							<div className="formRow">
+								<label htmlFor="address"></label>
+								<input type="text" id="zip" name="zip" className="input" placeholder="ZIP code" />
+								<p id="zipError"></p>
+							</div>
 						</div>
 						<div className="formRow">
 							<label htmlFor="address"></label>

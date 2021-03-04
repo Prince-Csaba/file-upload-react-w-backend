@@ -47,6 +47,17 @@ body {
   margin-left: 10px;
 }
 
+.cityWrapper{
+  display: flex;
+  width: 380px;
+  gap: 20px;
+}
+
+#city,
+#zip {
+  width: 180px;
+}
+
 #submitBtn {
   background-color: rgb(26,177,136);
   color: white;
