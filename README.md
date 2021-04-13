@@ -14,7 +14,7 @@ A short school project made with my team for practicing the backend-frontend con
 First install the dependencies for both the frontend2 and the backend by running.
 
 ```bash
--npm install
+npm install
 ```
 For the backend part you need to have [Node Js](https://nodejs.org/en/) installed on your computer.
 
